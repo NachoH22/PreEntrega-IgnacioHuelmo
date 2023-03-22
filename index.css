@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto" , sans-serif;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+h1 { font-size: 3.5em;}
+h2 { font-size: 2.7em ;}
+h3 { font-size: 2em;}
+p  { font-size: 1.25em;}
+
+button{
+    font-size: 1.5;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: White;
+    background-color:navy
+
+}
+
+button:hover{
+    background-color: rgb(0, 0, 102)
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: navy;}
+
+header{
+    background-color: rgb(240, 240, 240);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: navy;
+    font-size: 1.8em;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: 0;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: navy
+}
+
+#hero{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/cabinaa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.8em;
+}
+
+
+#somos-sol-cabinas .container{
+    text-align: center;
+    padding: 200px 12px;
+    background-color: rgb(245, 245, 245);
+}
+
+#nuestros-servicios{
+    background-color: rgb(214, 158, 3);
+    color: white;
+    text-align: center;
+}
+#nuestros-servicios .container{
+
+    padding: 90px 25px;
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/cabinaa2.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/espejoo.jpg");
+}
+
+#caracteristicas .container{
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    padding: 200px 12;
+}
+
+footer{
+    background-color: rgb(240, 240, 240);
+}
+
+footer p{
+    margin: 0px;
+    padding: 12px;
+    color: rgb(75, 75, 75);;
+}
+
+footer .container{
+    
+    height: 150px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
+}
+
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#somos-sol-cabinas{
+
+}
+.somos-sol-cabinas .container{
+    display: flex;
+}
+
+.somos-sol-cabinas .img .container{
+    background-image: linear-gradient(
+        0deg
+        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.5)
+    );
+    background-size: ;
+
+}
+
+
